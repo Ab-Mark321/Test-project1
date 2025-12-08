@@ -5,7 +5,7 @@ grades ={"Abenezer":"A",
        "Amen":"A",
        "Eyasu":"B",
        "Israel":"C"}
-def get_grade(student_name):
+def get_grade(grades,student_name):
     try :
         student_name=student_name.title()
         if student_name in grades.keys():
@@ -60,7 +60,7 @@ def login():
 
             elif login_as.lower() =="user":
                 name= input("please enter your name\n")
-                result=get_grade(name)
+                result=get_grade(grades,name)
                 print(result)
             elif login_as.lower() =="return":
                 print("Thank you for using our portal")
