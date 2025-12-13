@@ -1,8 +1,7 @@
 def count_word_frequency():
     sentence = input("Enter a sentence: ").strip()
     words = sentence.split()
-    
-    frequency = {}
+     y = {}
     for word in words:
         frequency[word] = frequency.get(word, 0) + 1
     

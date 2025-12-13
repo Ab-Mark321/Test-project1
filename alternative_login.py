@@ -2,7 +2,6 @@ def simple_logger():
     with open("log.txt", "a") as file:
         file.write("User logged in\n")
     
-
     print("Full Log History:")
     print("=" * 30)
     try:
