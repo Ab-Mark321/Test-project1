@@ -14,4 +14,4 @@ A functional Command Line Interface (CLI) application built with Python to manag
 2. Clone this repository to your local machine.
 3. Navigate to the project folder and run the application:
    ```bash
-   python main.py
+   python todo_app.py
