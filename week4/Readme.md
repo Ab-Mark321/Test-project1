@@ -1,19 +1,17 @@
-# OOP Todo Application
+# OOP-Based Todo Application
 
-[cite_start]A Command Line Interface (CLI) application built with Python to manage tasks[cite: 4].
+A functional Command Line Interface (CLI) application built with Python to manage tasks using Object-Oriented Programming (OOP).
 
 ## Features
-* [cite_start]**Add Todo**: Create tasks with titles[cite: 16, 18].
-* [cite_start]**View Todos**: List task ID, title, and status[cite: 19, 21].
-* [cite_start]**Update Todo**: Change title or completion status[cite: 22, 23, 24].
-* [cite_start]**Delete Todo**: Remove tasks by ID[cite: 25, 27].
-* [cite_start]**Persistence**: Data is saved to `todos.json`[cite: 29, 30].
+* **Add Todo**: Create new tasks with a specific title.
+* **View Todos**: Display all saved tasks showing their unique ID, title, and completion status.
+* **Update Todo**: Change an existing task's title or toggle its completion status.
+* **Delete Todo**: Remove a task from the system using its unique ID.
+* **Data Persistence**: All tasks are saved to a local `todos.json` file and are reloaded automatically when the program restarts.
 
 ## How to Run
-1. Run the script: `python main.py`
-2. Follow the on-screen menu instructions.
-
-## Data Handling (Objects & JSON)
-[cite_start]This application uses Object-Oriented Programming (OOP) to manage tasks. 
-* [cite_start]**Serialization**: Task objects are converted into dictionaries using the `to_dict()` method to be saved as JSON[cite: 12].
-* [cite_start]**Deserialization**: When the app starts, JSON data is parsed and passed into the `Task.from_dict()` static method to recreate live Task objects[cite: 13].
+1. Ensure you have Python installed on your system.
+2. Clone this repository to your local machine.
+3. Navigate to the project folder and run the application:
+   ```bash
+   python main.py
