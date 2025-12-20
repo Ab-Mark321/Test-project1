@@ -1,6 +1,6 @@
 import json
 
-# Handles reading/writing JSON file
+
 class JsonHandler:
     def __init__(self, filename="todos.json"):
         self.filename = filename
@@ -10,7 +10,6 @@ class JsonHandler:
             with open(self.filename, "r") as f:
                 return json.load(f)
         except FileNotFoundError:
-            # If file doesn't exist, start with empty list
             return []
 
     def write_json(self, data):
@@ -18,7 +17,6 @@ class JsonHandler:
             json.dump(data, f, indent=2)
 
 
-# Handles task operations (Add, View, Update, Delete)
 class TodoManager:
     def __init__(self):
         self.storage = JsonHandler()
@@ -61,7 +59,6 @@ class TodoManager:
             print("Task not found.")
 
 
-# CLI loop
 def main():
     manager = TodoManager()
     while True:
